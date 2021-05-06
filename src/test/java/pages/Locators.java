@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 public interface Locators {
 
     String url = "https://telefonvertrag.de/";
-
+    String mail = "kayitkayiticin@gmail.com";
     By akzeptiere = By.xpath("//button[@data-cf-action='accept']");
     By kabel = By.xpath("(//a[text()='Kabel'])[2]");
     By kabelSub = By.xpath("//h1[text()='Kabel']");
@@ -20,7 +20,12 @@ public interface Locators {
     By salaryList = By.cssSelector("div.price");
     By jetztBestellen = By.xpath("//a[text()='Jetzt bestellen']");
     // kabel locator
-    By newsletterButtonAlert= By.xpath("//*[@id=\"__next\"]/footer/div[1]/div[1]/div[2]/div/div[1]/text()");
+    By newsletterAbmelden = By.xpath("//a[text()='Newsletter wieder abmelden']");
+    By inputNewsAbmelden = By.xpath("(//input[@class='form-control'])[1]");
+    By buttonAbmelden=By.xpath("//button[text()='Abmelden']");
+    By anmeldenControl=By.cssSelector("footer div.alert");
+    By abmeldenControl=By.cssSelector("div.alert.alert-success.fade.show");
+
     By talkTariff = By.xpath("(//div[@class='custom-checkbox custom-control'])[4]");
     By kabelTarifNameList = By.cssSelector("div.plan_box.tarife-name");
     By kabelButonList = By.cssSelector("a.plan_box_price_once_btn");
@@ -61,6 +66,8 @@ public interface Locators {
     By weiter = By.xpath("//a[text()='Weiter']");
     By ibanFalseMsj = By.xpath("//div[text()='Bitte kontrollieren Sie die von Ihnen eingegebene IBAN.']");
     By mailInput = By.cssSelector("input.form-control");
-    By registrationButton= By.cssSelector("button.newsletter-send-button");
+    By registrationButton = By.cssSelector("button.newsletter-send-button");
+    By untenLink=By.cssSelector("ul>li>a");
+    By webPageTitle=By.cssSelector("div>h1");
+
 }
-//*[@id="__next"]/main/div/div/div[2]/div/div/div/div/div[1]/div[2]/div/div/div/div[1]/div/select
