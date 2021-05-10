@@ -69,5 +69,7 @@ public interface Locators {
     By registrationButton = By.cssSelector("button.newsletter-send-button");
     By untenLink=By.cssSelector("ul>li>a");
     By webPageTitle=By.cssSelector("div>h1");
+    By blogControl = By.xpath("//div/span[text()='Blog']"); //By pictureControl = By.cssSelector("div.angebote_banner__1xltT");
+    By mehrErfahrenButton=By.cssSelector("span.angebote_button__3ww_C");
 
 }
